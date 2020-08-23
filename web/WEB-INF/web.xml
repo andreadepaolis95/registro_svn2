@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <servlet>
+        <servlet-name>StudentHomeServlet</servlet-name>
+        <servlet-class>servlet.StudentHomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentHomeServlet</servlet-name>
+        <url-pattern>/StudentHomeServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ProfessorHomeServlet</servlet-name>
+        <servlet-class>servlet.ProfessorHomeServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProfessorHomeServlet</servlet-name>
+        <url-pattern>/ProfessorHomeServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>AssignmentServlet</servlet-name>
+        <servlet-class>servlet.AssignmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AssignmentServlet</servlet-name>
+        <url-pattern>/AssignmentServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>ProfessorRegisterServlet</servlet-name>
+        <servlet-class>servlet.ProfessorRegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ProfessorRegisterServlet</servlet-name>
+        <url-pattern>/ProfessorRegisterServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteRecordServlet</servlet-name>
+        <servlet-class>servlet.DeleteRecordServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteRecordServlet</servlet-name>
+        <url-pattern>/DeleteRecordServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SaveRecordServlet</servlet-name>
+        <servlet-class>servlet.SaveRecordServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SaveRecordServlet</servlet-name>
+        <url-pattern>/SaveRecordServlet</url-pattern>
+    </servlet-mapping>
+
+<servlet>
+    <servlet-name>StudentReportServlet</servlet-name>
+    <servlet-class>servlet.StudentReportServlet</servlet-class>
+</servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentReportServlet</servlet-name>
+        <url-pattern>/StudentReportServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>StudentAbsenceServlet</servlet-name>
+        <servlet-class>servlet.StudentAbsenceServlet</servlet-class>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>SaveAssignmentServlet</servlet-name>
+        <servlet-class>servlet.SaveAssignmentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SaveAssignmentServlet</servlet-name>
+        <url-pattern>/SaveAssignmentServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>StudentAbsenceServlet</servlet-name>
+        <url-pattern>/StudentAbsenceServlet</url-pattern>
+    </servlet-mapping>
+
+    <error-page>
+        <location>/view/error.jsp</location>
+    </error-page>
+
+</web-app>
