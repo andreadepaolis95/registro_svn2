@@ -8,7 +8,8 @@ jdk:
   addons:
     sonarcloud: 
       organization: andreadepaolis95
-        token: K7_hiLYPZYWrVa9rCQqNtA
+        token: 
+          secure: K7_hiLYPZYWrVa9rCQqNtA
 
  
 script:
