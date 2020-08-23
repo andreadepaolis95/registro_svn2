@@ -7,7 +7,7 @@ jdk:
 
  
 script:
-  -ant build
+  - ant build
 
 
   
