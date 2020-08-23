@@ -1,0 +1,131 @@
+
+.btn-save{
+    border-radius: 10px;
+    box-shadow: 0 0 3px grey;
+}
+
+.textarea{
+    font-size: 1em;
+    padding-top:5px;
+    width: 100%;
+    border-radius: 10px;
+    border: 2px;
+    border-color:grey;
+    box-shadow: 0 0 3px grey
+}
+
+.big{
+    height: 40%;
+}
+
+.title{
+    font-size: 25px;
+    color: white;
+    padding: 5px;
+}
+
+.card2{
+    width: 40%;
+    height: 45%;
+    background: linear-gradient(160deg, rgba(140,29,255,1) 0%, rgba(255,130,0,1) 100%);
+    border-radius: 10px;
+
+}
+
+.text{
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color:white;
+    border-radius: 10px;
+    overflow: auto;
+}
+.text1{
+    margin:5px;
+    color:black;
+    font-size: 14px;
+
+}
+.title2{
+    margin:5px;
+    color:black;
+    font-size: 16px !important;
+}
+
+.flipCard {
+    -webkit-perspective: 800;
+    -ms-perspective: 800;
+    -moz-perspective: 800;
+    -o-perspective: 800;
+    width: 35%;
+    height: 55%;
+}
+
+
+
+.flipCard .card.flipped {
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+}
+
+.flipCard .card {
+    width: 100%;
+    height: 100%;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.5s;
+    -moz-transform-style: preserve-3d;
+    -moz-transition: 0.5s;
+    -ms-transform-style: preserve-3d;
+    -ms-transition: 0.5s;
+    -o-transform-style: preserve-3d;
+    -o-transition: 0.5s;
+    transform-style: preserve-3d;
+    transition: 0.5s;
+
+}
+
+.flipCard .card .side {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    box-sizing: border-box;
+    z-index: 2;
+    backface-visibility: hidden;  /* W3C */
+    -webkit-backface-visibility: hidden; /* Safari & Chrome */
+    -moz-backface-visibility: hidden; /* Firefox */
+    -ms-backface-visibility: hidden; /* Internet Explorer */
+    -o-backface-visibility: hidden; /* Opera */
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+
+}
+.flipCard .card .back {
+    color: white;
+    transform:rotatey(-180deg);
+    -ms-transform:rotatey(-180deg); /* IE 9 */
+    -moz-transform:rotatey(-180deg); /* Firefox */
+    -webkit-transform:rotatey(-180deg); /* Safari and Chrome */
+    -o-transform:rotatey(-180deg); /* Opera */
+}
+
+.flipCard .card .front {
+    font-size: 3em;
+
+    background: linear-gradient(160deg, rgba(140,29,255,1) 0%, rgba(255,130,0,1) 100%);
+    border-radius: 10px;  border: 3px solid white;
+    color: white;
+
+}
+.flipCard .card .back {
+    border: 3px solid white;
+    text-align: center;
+    background: linear-gradient(160deg, rgba(140,29,255,1) 0%, rgba(255,130,0,1) 100%);
+    border-radius: 10px;
+    padding-top: 10px;
+
+}

@@ -1,0 +1,34 @@
+CREATE DATABASE IF NOT EXISTS registro4;
+USE registro4;
+CREATE TABLE users(
+    username VARCHAR(255),
+    password VARCHAR(255),
+    id VARCHAR(255),
+    PRIMARY KEY(id)
+);
+CREATE TABLE students(
+    name VARCHAR(255),
+	last VARCHAR(255),
+	id VARCHAR(255),
+	PRIMARY KEY(id)
+);
+
+CREATE TABLE professors(
+    name VARCHAR(255),
+	last VARCHAR(255),
+	id VARCHAR(255),
+	PRIMARY KEY(id)
+);
+CREATE TABLE match(
+      userid VARCHAR(255),
+      clazz VARCHAR(255),
+      PRIMARY KEY(userid,clazz)
+);
+INSERT INTO users (username,password,id) VALUES ("alberto","123","1");
+INSERT INTO students (name,last,id) VALUES ("Alberto","Menichelli","1");
+INSERT INTO professors(name,last,id) VALUES ("Fabrizio","Cola","2");
+INSERT INTO match(userid,class) VALUES ("2","1B");
+INSERT INTO match(userid,class) VALUES ("1","1B");
+
+
+
