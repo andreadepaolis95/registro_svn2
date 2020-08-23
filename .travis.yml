@@ -9,7 +9,7 @@ jdk:
     sonarcloud: 
       organization: andreadepaolis95
         token: 
-          secure: K7_hiLYPZYWrVa9rCQqNtA
+           secure: K7_hiLYPZYWrVa9rCQqNtA
 
  
 script:
