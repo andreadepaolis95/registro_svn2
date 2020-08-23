@@ -28,6 +28,7 @@ public class AbsenceList{
     }
 
     public void addJustified(Absence a){
+        System.out.println('justified');
         this.justifiedAbsences.add(a);
     }
 
