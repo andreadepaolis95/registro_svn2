@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="registro_svn" default="all">
+<project name="registro2020" default="all">
   <target name="build" />
   
   <property file="build.properties"/>
@@ -80,98 +80,98 @@
   <!-- Modules -->
   
   
-  <!-- Module registro_svn -->
+  <!-- Module registro2020 -->
   
-  <dirname property="module.registro_svn.basedir" file="${ant.file}"/>
+  <dirname property="module.registro2020.basedir" file="${ant.file}"/>
   
   
   
-  <property name="compiler.args.registro_svn" value="-encoding UTF-8 -source 13 -target 13 ${compiler.args}"/>
+  <property name="compiler.args.registro2020" value="-encoding UTF-8 -source 13 -target 13 ${compiler.args}"/>
   
-  <property name="registro_svn.output.dir" value="${module.registro_svn.basedir}/out/production/registro_svn"/>
-  <property name="registro_svn.testoutput.dir" value="${module.registro_svn.basedir}/out/test/registro_svn"/>
+  <property name="registro2020.output.dir" value="${module.registro2020.basedir}/out/production/registro2020"/>
+  <property name="registro2020.testoutput.dir" value="${module.registro2020.basedir}/out/test/registro2020"/>
   
-  <path id="registro_svn.module.bootclasspath">
+  <path id="registro2020.module.bootclasspath">
     <!-- Paths to be included in compilation bootclasspath -->
   </path>
   
-  <path id="registro_svn.module.production.classpath">
+  <path id="registro2020.module.production.classpath">
     <path refid="library.tomcat_9.0.27.classpath"/>
     <path refid="library.javafx-sdk-13.0.classpath"/>
     <path refid="library.jstl-1.2.classpath"/>
   </path>
   
-  <path id="registro_svn.runtime.production.module.classpath">
-    <pathelement location="${registro_svn.output.dir}"/>
+  <path id="registro2020.runtime.production.module.classpath">
+    <pathelement location="${registro2020.output.dir}"/>
     <path refid="library.javafx-sdk-13.0.classpath"/>
     <path refid="library.jstl-1.2.classpath"/>
   </path>
   
-  <path id="registro_svn.module.classpath">
-    <pathelement location="${registro_svn.output.dir}"/>
+  <path id="registro2020.module.classpath">
+    <pathelement location="${registro2020.output.dir}"/>
     <path refid="library.tomcat_9.0.27.classpath"/>
     <path refid="library.javafx-sdk-13.0.classpath"/>
     <path refid="library.jstl-1.2.classpath"/>
   </path>
   
-  <path id="registro_svn.runtime.module.classpath">
-    <pathelement location="${registro_svn.testoutput.dir}"/>
-    <pathelement location="${registro_svn.output.dir}"/>
+  <path id="registro2020.runtime.module.classpath">
+    <pathelement location="${registro2020.testoutput.dir}"/>
+    <pathelement location="${registro2020.output.dir}"/>
     <path refid="library.tomcat_9.0.27.classpath"/>
     <path refid="library.javafx-sdk-13.0.classpath"/>
     <path refid="library.jstl-1.2.classpath"/>
   </path>
   
   
-  <patternset id="excluded.from.module.registro_svn">
+  <patternset id="excluded.from.module.registro2020">
     <patternset refid="ignored.files"/>
   </patternset>
   
-  <patternset id="excluded.from.compilation.registro_svn">
-    <patternset refid="excluded.from.module.registro_svn"/>
+  <patternset id="excluded.from.compilation.registro2020">
+    <patternset refid="excluded.from.module.registro2020"/>
   </patternset>
   
-  <path id="registro_svn.module.sourcepath">
-    <dirset dir="${module.registro_svn.basedir}">
+  <path id="registro2020.module.sourcepath">
+    <dirset dir="${module.registro2020.basedir}">
       <include name="src"/>
     </dirset>
   </path>
   
   
-  <target name="compile.module.registro_svn" depends="compile.module.registro_svn.production,compile.module.registro_svn.tests" description="Compile module registro_svn"/>
+  <target name="compile.module.registro2020" depends="compile.module.registro2020.production,compile.module.registro2020.tests" description="Compile module registro2020"/>
   
-  <target name="compile.module.registro_svn.production" description="Compile module registro_svn; production classes">
-    <mkdir dir="${registro_svn.output.dir}"/>
-    <javac destdir="${registro_svn.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
-      <compilerarg line="${compiler.args.registro_svn}"/>
-      <bootclasspath refid="registro_svn.module.bootclasspath"/>
-      <classpath refid="registro_svn.module.production.classpath"/>
-      <src refid="registro_svn.module.sourcepath"/>
-      <patternset refid="excluded.from.compilation.registro_svn"/>
+  <target name="compile.module.registro2020.production" description="Compile module registro2020; production classes">
+    <mkdir dir="${registro2020.output.dir}"/>
+    <javac destdir="${registro2020.output.dir}" debug="${compiler.debug}" nowarn="${compiler.generate.no.warnings}" memorymaximumsize="${compiler.max.memory}" fork="true">
+      <compilerarg line="${compiler.args.registro2020}"/>
+      <bootclasspath refid="registro2020.module.bootclasspath"/>
+      <classpath refid="registro2020.module.production.classpath"/>
+      <src refid="registro2020.module.sourcepath"/>
+      <patternset refid="excluded.from.compilation.registro2020"/>
     </javac>
     
-    <copy todir="${registro_svn.output.dir}">
-      <fileset dir="${module.registro_svn.basedir}/src">
+    <copy todir="${registro2020.output.dir}">
+      <fileset dir="${module.registro2020.basedir}/src">
         <patternset refid="compiler.resources"/>
         <type type="file"/>
       </fileset>
     </copy>
   </target>
   
-  <target name="compile.module.registro_svn.tests" depends="compile.module.registro_svn.production" description="compile module registro_svn; test classes" unless="skip.tests"/>
+  <target name="compile.module.registro2020.tests" depends="compile.module.registro2020.production" description="compile module registro2020; test classes" unless="skip.tests"/>
   
-  <target name="clean.module.registro_svn" description="cleanup module">
-    <delete dir="${registro_svn.output.dir}"/>
-    <delete dir="${registro_svn.testoutput.dir}"/>
+  <target name="clean.module.registro2020" description="cleanup module">
+    <delete dir="${registro2020.output.dir}"/>
+    <delete dir="${registro2020.testoutput.dir}"/>
   </target>
   
   <target name="init" description="Build initialization">
     <!-- Perform any build initialization in this target -->
   </target>
   
-  <target name="clean" depends="clean.module.registro_svn, clean.artifact.unnamed" description="cleanup all"/>
+  <target name="clean" depends="clean.module.registro2020, clean.artifact.unnamed" description="cleanup all"/>
 
-  <target name="build.modules" depends="init, clean, compile.module.registro_svn" description="build all modules"/>
+  <target name="build.modules" depends="init, clean, compile.module.registro2020" description="build all modules"/>
 
   <target name="init.artifacts">
     <property name="artifacts.temp.dir" value="${basedir}/__artifacts_temp"/>
@@ -182,12 +182,12 @@
   <target name="clean.artifact.unnamed" description="clean unnamed artifact output">
   </target>
   
-  <target name="artifact.unnamed" depends="init.artifacts, compile.module.registro_svn" description="Build &#39;unnamed&#39; artifact">
+  <target name="artifact.unnamed" depends="init.artifacts, compile.module.registro2020" description="Build &#39;unnamed&#39; artifact">
     <mkdir dir="${artifact.output.unnamed}"/>
     <mkdir dir="${artifact.output.unnamed}/WEB-INF"/>
     <mkdir dir="${artifact.output.unnamed}/WEB-INF/classes"/>
     <copy todir="${artifact.output.unnamed}/WEB-INF/classes">
-      <fileset dir="${registro_svn.output.dir}"/>
+      <fileset dir="${registro2020.output.dir}"/>
     </copy>
     <mkdir dir="${artifact.output.unnamed}/WEB-INF/lib"/>
     <copy file="${basedir}/out/artifacts/registro2_war_exploded/WEB-INF/lib/jstl-1.2.jar" tofile="${artifact.output.unnamed}/WEB-INF/lib/jstl-1.2.jar"/>
